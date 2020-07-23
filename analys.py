@@ -14,3 +14,4 @@ import seaborn as sns
 data = pd.read_csv('Placement_Data_Full_Class.csv')
 print(data.head())
 data = data.dropna()
+sns.pairplot(data, hue = 'status')
